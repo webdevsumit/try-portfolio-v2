@@ -137,13 +137,10 @@ nav{
 }
 
 #typedtext{
-    font-family: 'Waiting for the Sunrise', cursive; 
-    font-size:24px; 
-    margin: 10px; 
-    /* margin: 10px 50px;  */
-    letter-spacing: 6px; 
-    font-weight: bold;
-  }
-  #typedtext>h1{
-    margin: 0;
-  }
+font-family: 'Waiting for the Sunrise', cursive; 
+font-size:24px; 
+margin: 10px; 
+/* margin: 10px 50px;  */
+letter-spacing: 6px; 
+font-weight: bold;
+}

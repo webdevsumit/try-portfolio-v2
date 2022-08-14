@@ -76,6 +76,12 @@ nav{
     flex-direction: column;
     min-width: 400px;
 }
+
+.projects-head{
+    color: white;
+    margin-left: 30px;
+}
+
 .projectDetails{
     width: 50%;
     min-height: 100%;
@@ -98,3 +104,46 @@ nav{
     cursor: pointer;
     background-color: #B5BEC7;
 }
+
+.projectDetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 100vh;
+    width: 50%;
+    background-color: transparent;
+}
+
+.projectDetail{
+    /* background-color: red; */
+    background-image: linear-gradient(130deg,
+                            rgba(61, 61, 61, 0.505),
+                            rgba(109, 109, 109, 0.57)
+                            );
+    min-height: 50vh;
+    width: 70%;
+    margin: 20px 200px;
+    border-radius: 15px;
+    padding: 15px;
+    
+    /* background: rgba(78, 78, 78, 0.4); */
+    box-shadow: 0 8px 32px 0 rgba(13, 43, 57, 0.37);
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: 1px solid rgba(97, 97, 97, 0.18);
+    color: white;
+}
+
+#typedtext{
+    font-family: 'Waiting for the Sunrise', cursive; 
+    font-size:24px; 
+    margin: 10px; 
+    /* margin: 10px 50px;  */
+    letter-spacing: 6px; 
+    font-weight: bold;
+  }
+  #typedtext>h1{
+    margin: 0;
+  }

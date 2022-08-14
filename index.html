@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
     <title>Sumit Dhakad</title>
 </head>
 <body>
@@ -21,12 +23,32 @@
     <section class="middle" id="middleSection">
         <div class="mainMiddelContainer">
             <div class="techButtons">
-                <button class="project-buttons">React.js</button>
-                <button class="project-buttons">Django</button>
-                <button class="project-buttons">React Native</button>
+                <div>
+                    <h1 class="projects-head">React.js</h1>
+                    <div class="projects">
+                        <button class="project-buttons" onclick="getproject1()">Project 1</button>
+                        <button class="project-buttons" onclick="getproject2()">Project 2</button>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="projects-head">Django</h1>
+                    <div class="projects">
+                        <button class="project-buttons" onclick="getproject3()">Project 3</button>
+                        <button class="project-buttons" onclick="getproject4()">Project 4</button>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="projects-head">React Native</h1>
+                    <div class="projects">
+                        <button class="project-buttons" onclick="getproject5()">Project 5</button>
+                        <button class="project-buttons" onclick="getproject6()">Project 6</button>
+                    </div>
+                </div>
             </div>
             <div class="projectDetails">
-
+                <div class="projectDetail">
+                    <div id="typedtext"></div>
+                </div>
             </div>
         </div>
     </section>

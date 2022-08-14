@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-origin: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.top{
+    background-image: url('./assets/top.png');
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+nav{
+    padding: 20px;
+    font-size: 24px;
+    letter-spacing: 4px;
+    position: fixed;
+    color: white;
+}
+
+
+.mainHead{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.herotag{
+    font-size: 124px;
+    letter-spacing: 4px;
+    color: #2A4554;
+}
+
+.font-normal{
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+.font-dark{
+    font-weight: 900;
+    margin-left: 15px;
+}
+
+.middle{
+    background-image: url('./assets/middle.png');
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.mainMiddelContainer{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.techButtons{
+    width: 50%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    min-width: 400px;
+}
+.projectDetails{
+    width: 50%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    min-width: 400px;
+    background-color: red;
+}
+
+.project-buttons{
+    padding: 10px 20px;
+    font-size: 34px;
+    font-weight: bold;
+    border-radius: 100px;
+    width: 300px;
+    margin: 15px 0px;
+    cursor: pointer;
+    background-color: #B5BEC7;
+}

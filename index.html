@@ -5,52 +5,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="./projecstData.js"></script>
+    <script src="./scrollSection.js"></script>
     <script src="./script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
     <title>Sumit Dhakad</title>
 </head>
 <body>
-    <section class="top">
+    <div class="navigation-dots">
+        <a href="#top"><div class="navigate-dot"></div></a>
+        <a href="#middle"><div class="navigate-dot"></div></a>
+        <a href="#bottom"><div class="navigate-dot"></div></a>
+    </div>
+    <section id="top" class="top">
         <nav>SUMIT DHAKAD</nav>
         <div class="mainHead">
-            <h6 class="herotag font-normal">FONTEND</h6>
+            <h6 class="herotag font-normal">SOFTWARE</h6>
             <h6 class="herotag font-dark">DEVELOPER</h6>
         </div>
     </section>
-    <section class="middle" id="middleSection">
+    <section class="middle" id="middle">
         <div class="mainMiddelContainer">
             <div class="techButtons">
                 <div>
                     <h1 class="projects-head">React.js</h1>
                     <div class="projects">
-                        <button class="project-buttons" onclick="getproject1()">Project 1</button>
-                        <button class="project-buttons" onclick="getproject2()">Project 2</button>
+                        <button class="project-buttons" onclick="getproject1()">RentYug</button>
+                        <button class="project-buttons" onclick="getproject2()">NPR</button>
                     </div>
                 </div>
                 <div>
                     <h1 class="projects-head">Django</h1>
                     <div class="projects">
-                        <button class="project-buttons" onclick="getproject3()">Project 3</button>
-                        <button class="project-buttons" onclick="getproject4()">Project 4</button>
+                        <button class="project-buttons" onclick="getproject3()">TicTag</button>
+                        <button class="project-buttons" onclick="getproject4()">ShopMart</button>
                     </div>
                 </div>
                 <div>
                     <h1 class="projects-head">React Native</h1>
                     <div class="projects">
-                        <button class="project-buttons" onclick="getproject5()">Project 5</button>
-                        <button class="project-buttons" onclick="getproject6()">Project 6</button>
+                        <button class="project-buttons" onclick="getproject5()">UnknownChats</button>
+                        <button class="project-buttons" onclick="getproject6()">TicTag Supplier</button>
                     </div>
                 </div>
             </div>
             <div class="projectDetails">
                 <div class="projectDetail">
-                    <div id="typedtext"></div>
+                    <div id="typedtext">
+                        I listed here some of my recent and favourite personal projects. Click them to see the details.<span class="blinking">_</span>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
+    <section id="bottom" class="bottom">
+       <div class="bottom-left">
+            <div class="skills">
+                <h4>SKILLS</h4>
+                <p>Python</p>
+                <p>JavaScript</p>
+                <p>C++</p>
+                <p>Git</p>
+            </div>
+            <div class="about-me">
+                <h4>Sumit Dhakad</h4>
+                <p>A self taught Full Stack Developer. Worked on many projects like mentioned above. I mostly use Python, JavaScript, C++ and their frameworks like Django and React. Sometimes ago I started solving CP problems on platforms like leetcode, code studio and GFG. </p>
+            </div>
+       </div>
+       <div class="bottom-right">
+            <div class="resume">
+                <h4>RESUME <a href="https://drive.google.com/file/d/1LZcQBP9yeyOAOrHH-6UNnAkKt5g_BBWl/view?usp=sharing" title="Learn more about my Resume."><img class="resume-more-btn" src="assets/icons//more.svg"/></a></h4>
+                <p>Experience</p>
+                <p>Education</p>
+                <p>Skills</p>
+                <p>Achievements</p>
+                <p>Other Activities</p>
+            </div>
+            <div class="footer-links">
+                <div class="social-links">
+                    <a href="https://github.com/webdevsumit" title="Github account.">
+                        <img src="assets/icons/GitHub.png" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/sumit-dhakad/" title="Linkedin account.">
+                        <img src="assets/icons/LinkedIn.png" />
+                    </a>
+                    <a href="https://twitter.com/webdevsumit" title="Twitter account.">
+                        <img src="assets/icons/Twitter.png" />
+                    </a>
+                    <a href="https://leetcode.com/sumitdhakad/" title="Leetcode profile.">
+                        <img src="assets/icons/leetcode.png" />
+                    </a>
+                </div>
+                <a title="Send a mail to me." class="hire-me-btn" href="mailto:sumitdhakad2232@gmail.com">
+                    Hire Me
+                </a>
+            </div>
+       </div>
     </section>
 </body>
 </html>

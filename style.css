@@ -3,6 +3,46 @@
     padding: 0;
     background-origin: border-box;
     font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+.navigation-dots{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.navigation-dots>a{
+    text-decoration: none;
+}
+
+.navigate-dot{
+    margin: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 5px solid #2A4554;
 }
 
 .top{
@@ -49,7 +89,7 @@ nav{
 }
 
 .middle{
-    background-image: url('./assets/middle.png');
+    background-image: url('./assets/middle2.jpg');
     background-size: cover;
     background-position: center center;
     min-height: 100vh;
@@ -57,7 +97,7 @@ nav{
 }
 
 .mainMiddelContainer{
-    min-height: 100vh;
+    min-height: 110vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -99,8 +139,8 @@ nav{
     font-size: 34px;
     font-weight: bold;
     border-radius: 100px;
-    width: 300px;
-    margin: 15px 0px;
+    width: 320px;
+    margin: 15px 20px;
     cursor: pointer;
     background-color: #B5BEC7;
 }
@@ -143,4 +183,137 @@ margin: 10px;
 /* margin: 10px 50px;  */
 letter-spacing: 6px; 
 font-weight: bold;
+}
+
+.blinking{
+    /* transition: all ease 0.1s; */
+    animation: blink 0.5s infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes blink {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+/* .projectsIcons{
+
+} */
+
+.projectsIcons>a{
+    text-decoration: none;
+}
+
+.projectsIcon{
+    width: 40px;
+    cursor: pointer;
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateX(100px);
+
+    transition: all ease 0.1s;
+    animation: projectIconAnim 0.5s 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.anim-dalay-1s{
+    animation-delay: 0.4s;
+}
+
+.anim-dalay-2s{
+    animation-delay: 0.9s;
+}
+
+@keyframes projectIconAnim {
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+/* SECTION 3 STARTS FROM HERE.... */
+/* SECTION 3 STARTS FROM HERE.... */
+/* SECTION 3 STARTS FROM HERE.... */
+
+.bottom{
+    background-image: url('./assets/bottom.png');
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.bottom>div{
+    flex: 1;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 10px 10%;
+    margin-top: 150px;
+}
+
+.skills, .resume, .about-me{
+    margin-bottom: 40px;
+}
+
+.skills>h4, .resume>h4, .about-me>h4{
+    color: white;
+    font-size: 44px;
+}
+.skills>p, .resume>p, .about-me>p{
+    color: white;
+    margin: 3px 40px;
+    font-size: 20px;
+}
+
+.about-me>p{
+    margin-right: 0;
+}
+
+.social-links{
+    margin: 20px;
+}
+
+.social-links>a{
+    text-decoration: none;
+}
+
+.social-links>a>img{
+    height: 28px;
+    margin-left: 5px;
+}
+
+.hire-me-btn{
+    padding: 10px 60px;
+    font-size: 34px;
+    font-weight: bold;
+    border-radius: 100px;
+    /* width: 320px; */
+    margin: 15px 20px;
+    cursor: pointer;
+    background-color: #B5BEC7;
+    text-decoration: none;
+    color: #2A4554;
+}
+
+.resume-more-btn{
+    width: 35px;
 }
